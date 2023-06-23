@@ -1,3 +1,29 @@
+
+.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+}
+
+.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+
+
+
+
+
+
+
 body > div.elementor.elementor-14354 > div > div.elementor-section-wrap.elementor-motion-effects-parent > section.elementor-section.elementor-top-section.elementor-element.elementor-element-cc88063.elementor-section-full_width.elementor-section-height-min-height.elementor-section-items-stretch.elementor-section-height-default.elementor-motion-effects-element.elementor-motion-effects-element-type-background
 {
  height: 100px !important;
@@ -19,7 +45,6 @@ body > div.unique-navbar > div > i {
   position: absolute;
   background-color: #03dac6;
   margin: 0;
-  padding: 20px;
   border: 1px solid #007c7c;
   width: 80%;
   color: white !important;

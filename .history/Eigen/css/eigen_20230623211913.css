@@ -1,3 +1,29 @@
+
+.arrow {
+  display: inline-block;
+  margin: 0 10px;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  padding: 3px;
+}
+
+.arrow.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.arrow.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+
+
+
+
+
+
+
 body > div.elementor.elementor-14354 > div > div.elementor-section-wrap.elementor-motion-effects-parent > section.elementor-section.elementor-top-section.elementor-element.elementor-element-cc88063.elementor-section-full_width.elementor-section-height-min-height.elementor-section-items-stretch.elementor-section-height-default.elementor-motion-effects-element.elementor-motion-effects-element-type-background
 {
  height: 100px !important;
@@ -14,55 +40,24 @@ body > div.unique-navbar > div > i {
 
 
 
-/* Modal Content *//* recent Content */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: absolute; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding: 20px; /* Padding around the modal content */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  width: auto; /* Auto width based on content */
-  height: auto; /* Auto height based on content */
+#submenu {
+  display: none;
+  position: absolute;
+  background-color: #03dac6;
+  margin: 0;
+  border: 1px solid #007c7c;
+  width: 80%;
+  color: white !important;
+  font-weight: bold !important; /* Vetgedrukt */
+  text-align: center;
 }
 
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: 0; /* No margin */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Width of the modal content */
-  position: relative; /* Position relative to the modal */
+#recentwerk-item:hover #submenu {
+  display: block;
+  color: white; /* Kleur van de tekst */
+  font-weight: bold; /* Vetgedrukt */
+  text-align: center;
 }
-
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,7 +87,7 @@ body > div.unique-navbar > div > i {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(248, 2, 2, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-content {
