@@ -8,7 +8,7 @@
 	<link rel="profile" href="../gmpg.org/xfn/11.html">
 	<script src="Eigen/js/eigen.js"></script>
 	<link rel="stylesheet" href="Eigen/css/eigen.css">
-
+<!-- make html table -->
 	
 	<!-- This site is optimized with the Yoast SEO plugin v15.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Tekstbureau met uitstekende prijs-kwaliteitverhouding</title>
@@ -28,7 +28,6 @@
 	<meta property="og:image:width" content="1201" />
 	<meta property="og:image:height" content="631" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":["Person","Organization"],"@id":"https://www.thefarbear.blog/#/schema/person/b99e2c552941410f5a4801b9bb03563d","name":"Michael Farber","image":{"@type":"ImageObject","@id":"https://www.thefarbear.blog/#personlogo","inLanguage":"en-US","url":"https://www.thefarbear.blog/wp-content/uploads/2020/08/farbear-ico.png","width":512,"height":512,"caption":"Michael Farber"},"logo":{"@id":"https://www.thefarbear.blog/#personlogo"},"description":"Content creator, productivity enthusiast, and a former workaholic. I love writing about anything that has to do with self-improvement and giving the occasional lecture. Hybrid Argentinian, currently living in Tel-Aviv.","sameAs":["https://www.facebook.com/michaelfarberr","../www.instagram.com/thefarber/index.html","https://www.youtube.com/channel/UCKxKU3QO-_Bka-cPIZNdqgQ"]},{"@type":"WebSite","@id":"https://www.thefarbear.blog/#website","url":"https://www.thefarbear.blog/","name":"The Far Bear Philosophy","description":"This blog is all about personal growth and stuff.","publisher":{"@id":"https://www.thefarbear.blog/#/schema/person/b99e2c552941410f5a4801b9bb03563d"},"potentialAction":[{"@type":"SearchAction","target":"https://www.thefarbear.blog/?s={search_term_string}","query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://www.thefarbear.blog/#primaryimage","inLanguage":"en-US","url":"https://www.thefarbear.blog/wp-content/uploads/2020/08/homepage-thumb.png","width":1081,"height":1081,"caption":"the far bear philosophy"},{"@type":"WebPage","@id":"https://www.thefarbear.blog/#webpage","url":"https://www.thefarbear.blog/","name":"The Far Bear Philosophy - Be Kind, Have Fun, Make an Impact","isPartOf":{"@id":"https://www.thefarbear.blog/#website"},"about":{"@id":"https://www.thefarbear.blog/#/schema/person/b99e2c552941410f5a4801b9bb03563d"},"primaryImageOfPage":{"@id":"https://www.thefarbear.blog/#primaryimage"},"datePublished":"2019-09-19T14:19:03+00:00","dateModified":"2020-10-17T14:29:19+00:00","description":"I'm just here to talk about productivity, mental health & personal development. Oh, and business. That's a buzz word, right?","inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://www.thefarbear.blog/"]}]}]}</script>
 	<meta name="msvalidate.01" content="DFFAB1AEDBB5226185A392EF9A444494" />
 	<meta name="google-site-verification" content="EaylFRbRpJwO11nQ-lGvmTRMI-4IdhUnJRPGc9DtaYk" />
 	<meta name="p:domain_verify" content="6541943b45316c5df292247a3cbc2977" />
@@ -156,17 +155,45 @@ img.emoji {
 				<div class="elementor-widget-container">
 					<nav role="navigation" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-none">
 						<ul id="menu-1-0850d07" class="elementor-nav-menu">
-							<li class="menu-item logo-item">
-								<a href="index.html">
-									<img src="/Eigen/beerhoofdklaar.svg" alt="Logo" style="max-width: 50px; height: auto;">
-								</a>
-							</li>
 							<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15305"><a href="#tekstmidden" class="elementor-item">Lees</a></li>
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15380"><a href="#contact1" class="elementor-item">Contact</a></li>
-							<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14380"><a href="#recentwerk" class="elementor-item">Recent Werk</a></li>
+
+							<script>
+								document.addEventListener("DOMContentLoaded", function() {
+									var now = new Date();
+									var start = new Date(now.getFullYear(), 0, 1);
+									var week = Math.ceil((((now - start) / 86400000) + start.getDay() + 1) / 7);
+									document.getElementById('weeknummer').innerText = 'Week ' + week;
+								});
+								</script>
+								
+
+
+
+								<li id="recentwerk-item" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-14380">
+									
+									<a href="#recentwerk" class="elementor-item">Recent Werk</a>
+									<ul id="submenu">
+											<li><strong><</strong> <strong id="weeknummer">Week 25</strong> <strong>></strong></li>
+
+										
+
+										<li><a href="docs/Vitamines.pdf" download>Vitamines</a></li>
+
+
+
+										<li><a href="http://coverme.nl/">Coverme.nl</a></li>
+										<li><a href="http://driaan.nl/">Driaan.nl</a></li>
+										<!-- Voeg hier extra items toe -->
+									</ul>
+								</li>
+								<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15380"><a href="#contact1" class="elementor-item">Contact</a></li>
 						</ul>
 					</nav>
 					
+						
+					
+					
+
 				</div>
 				</div>
 						</div>
@@ -576,39 +603,37 @@ img.emoji {
 									</g>
 								  </g>
 								</svg></div>
-							  <div class="kvk-number">KVK: 768551120000</div>
-							  <div class="kvk-number"><a href="https://wa.me/639614391029">WhatsApp: +63 961 439 10299</a></div>
-							</div>
-							<div class="form-container">
-							  <form action="https://formspree.io/f/xpzebvpv" method="POST" class="cf" enctype="multipart/form-data">
-								<div class="form-field">
-								  <input type="text" name="name" id="input-name" placeholder="Naam" required>
+								<div class="kvk-number">KVK: 768551120000</div>
+								<div class="kvk-number"><a href="https://wa.me/639614391029">WhatsApp: +63 961 439 10299</a></div>
 								</div>
-								<div class="form-field">
-								  <input type="email" name="_replyto" id="input-email" placeholder="Emailadres" required>
+								<div class="form-container">
+								  <script type="text/javascript">
+									var submitted = false;
+								  </script>
+								  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='indexv.html';}"></iframe>
+								  <form action="https://docs.google.com/forms/d/e/1FAIpQLSc_b1n4-XbgBA7R3Y-0xhUdmgthv5Snx0OtfK2s3QQ6SpfZog/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+									<div class="form-field">
+									  <input type="email" name="entry.1852920529" id="input-email" placeholder="Emailadres" required>
+									</div>
+									<div class="form-field">
+									  <textarea name="entry.366206181" id="input-message" placeholder="Bericht" required></textarea>
+									</div>
+									<div class="form-field button-group">
+									  <input type="submit" value="Verstuur" id="input-submit">
+									  <a href="https://wa.me/639614391029" class="whatsapp-btn">
+										<i class="fab fa-whatsapp"></i> +63 961 439 10299
+									  </a>
+									</div>
+								  </form>
+								  <div id="modal" class="modal">
+									<div class="modal-content">
+									  <span class="close-button">&times;</span>
+									  <p>Bericht verstuurd!</p>
+									  <p>Sluiten in <span id="countdown-timer">5</span> seconden...</p>
+									</div>
+								  </div>
 								</div>
-								<div class="form-field">
-								  <input type="text" name="subject" id="input-subject" placeholder="Onderwerp" required>
-								</div>
-								<div class="form-field">
-								  <textarea name="message" id="input-message" placeholder="Bericht" required></textarea>
-								</div>
-								<div class="form-field button-group">
-								  <input type="submit" value="Verstuur" id="input-submit">
-								  <a href="https://wa.me/639614391029" class="whatsapp-btn">
-									<i class="fab fa-whatsapp"></i> +63 961 439 10299
-								  </a>
-								</div>
-						
-
-							  </form>
-							  <div id="modal" class="modal">
-								<div class="modal-content">
-								  <span class="close-button">&times;</span>
-								  <p>Bericht verstuurd!</p>
-								  <p>Sluiten in <span id="countdown-timer">5</span> seconden...</p>
-								</div>
-							  </div>
+								
 							  
 							  
 							</div>
